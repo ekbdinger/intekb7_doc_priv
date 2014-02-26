@@ -213,43 +213,6 @@ function doc_priv_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-priv_documentation-field_doc_version'
-  $field_instances['node-priv_documentation-field_doc_version'] = array(
-    'bundle' => 'priv_documentation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Which eCW version.  v8, v9, v10, etc.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_doc_version',
-    'label' => 'Version',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-priv_documentation-field_ebo_category'
   $field_instances['node-priv_documentation-field_ebo_category'] = array(
     'bundle' => 'priv_documentation',
@@ -335,8 +298,6 @@ function doc_priv_field_default_field_instances() {
   t('The date the file or document was last updated');
   t('The folder that the document is in on my.eclinicalworks.com (myecw)');
   t('These files are private');
-  t('Version');
-  t('Which eCW version.  v8, v9, v10, etc.');
   t('eBO Category');
   t('eCW Version');
 
