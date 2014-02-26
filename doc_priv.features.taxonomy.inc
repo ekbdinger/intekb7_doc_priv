@@ -17,13 +17,5 @@ function doc_priv_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
-    'vocabulary_17' => array(
-      'name' => 'Tags',
-      'machine_name' => 'vocabulary_17',
-      'description' => 'Free Tagging',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-    ),
   );
 }

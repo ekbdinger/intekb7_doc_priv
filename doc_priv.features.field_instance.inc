@@ -130,7 +130,7 @@ function doc_priv_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -283,12 +283,12 @@ function doc_priv_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
-  // Exported field_instance: 'node-priv_documentation-taxonomy_vocabulary_17'
-  $field_instances['node-priv_documentation-taxonomy_vocabulary_17'] = array(
+  // Exported field_instance: 'node-priv_documentation-taxonomy_vocabulary_10'
+  $field_instances['node-priv_documentation-taxonomy_vocabulary_10'] = array(
     'bundle' => 'priv_documentation',
     'default_value' => NULL,
     'deleted' => 0,
@@ -309,21 +309,18 @@ function doc_priv_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'taxonomy_vocabulary_17',
-    'label' => 'Tags',
+    'field_name' => 'taxonomy_vocabulary_10',
+    'label' => 'eCW Version',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 9,
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
     ),
   );
 
@@ -335,13 +332,13 @@ function doc_priv_field_default_field_instances() {
   t('Last Updated');
   t('Myecw folder');
   t('Sub-folders for eBO for use on Documentation and Videos');
-  t('Tags');
   t('The date the file or document was last updated');
   t('The folder that the document is in on my.eclinicalworks.com (myecw)');
   t('These files are private');
   t('Version');
   t('Which eCW version.  v8, v9, v10, etc.');
   t('eBO Category');
+  t('eCW Version');
 
   return $field_instances;
 }
