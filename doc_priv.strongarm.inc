@@ -96,7 +96,7 @@ function doc_priv_strongarm() {
           'weight' => '0',
         ),
         'badges' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
       ),
       'display' => array(),
