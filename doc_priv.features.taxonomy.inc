@@ -17,5 +17,21 @@ function doc_priv_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'product' => array(
+      'name' => 'Product',
+      'machine_name' => 'product',
+      'description' => '',
+      'hierarchy' => 1,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'vocabulary_10' => array(
+      'name' => 'eCW Version',
+      'machine_name' => 'vocabulary_10',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
   );
 }
