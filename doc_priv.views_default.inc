@@ -69,7 +69,7 @@ function doc_priv_views_default_views() {
   $handler->display->display_options['fields']['field_doc_myecw']['id'] = 'field_doc_myecw';
   $handler->display->display_options['fields']['field_doc_myecw']['table'] = 'field_data_field_doc_myecw';
   $handler->display->display_options['fields']['field_doc_myecw']['field'] = 'field_doc_myecw';
-  /* Field: Content: Version */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_doc_version']['id'] = 'field_doc_version';
   $handler->display->display_options['fields']['field_doc_version']['table'] = 'field_data_field_doc_version';
   $handler->display->display_options['fields']['field_doc_version']['field'] = 'field_doc_version';
@@ -246,70 +246,6 @@ function doc_priv_views_default_views() {
   $handler->display->display_options['filters']['field_doc_myecw_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_doc_myecw_tid']['vocabulary'] = 'product';
   $handler->display->display_options['filters']['field_doc_myecw_tid']['hierarchy'] = 1;
-  /* Filter criterion: Content: Version (field_doc_version) */
-  $handler->display->display_options['filters']['field_doc_version_tid']['id'] = 'field_doc_version_tid';
-  $handler->display->display_options['filters']['field_doc_version_tid']['table'] = 'field_data_field_doc_version';
-  $handler->display->display_options['filters']['field_doc_version_tid']['field'] = 'field_doc_version_tid';
-  $handler->display->display_options['filters']['field_doc_version_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_doc_version_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_doc_version_tid']['expose']['operator_id'] = 'field_doc_version_tid_op';
-  $handler->display->display_options['filters']['field_doc_version_tid']['expose']['label'] = 'Version (field_doc_version)';
-  $handler->display->display_options['filters']['field_doc_version_tid']['expose']['operator'] = 'field_doc_version_tid_op';
-  $handler->display->display_options['filters']['field_doc_version_tid']['expose']['identifier'] = 'field_doc_version_tid';
-  $handler->display->display_options['filters']['field_doc_version_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    3 => 0,
-    1 => 0,
-    23 => 0,
-    21 => 0,
-    36 => 0,
-    43 => 0,
-    39 => 0,
-    25 => 0,
-    46 => 0,
-    9 => 0,
-    31 => 0,
-    19 => 0,
-    14 => 0,
-    15 => 0,
-    13 => 0,
-    5 => 0,
-    22 => 0,
-    12 => 0,
-    30 => 0,
-    38 => 0,
-    11 => 0,
-    42 => 0,
-    40 => 0,
-    29 => 0,
-    32 => 0,
-    35 => 0,
-    41 => 0,
-    28 => 0,
-    16 => 0,
-    45 => 0,
-    27 => 0,
-    24 => 0,
-    37 => 0,
-    26 => 0,
-    34 => 0,
-    18 => 0,
-    17 => 0,
-    33 => 0,
-    44 => 0,
-    20 => 0,
-    7 => 0,
-    8 => 0,
-    47 => 0,
-    48 => 0,
-    49 => 0,
-    50 => 0,
-    51 => 0,
-    52 => 0,
-    53 => 0,
-  );
-  $handler->display->display_options['filters']['field_doc_version_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_doc_version_tid']['vocabulary'] = 'vocabulary_10';
   /* Filter criterion: Content: eBO Category (field_ebo_category) */
   $handler->display->display_options['filters']['field_ebo_category_tid']['id'] = 'field_ebo_category_tid';
   $handler->display->display_options['filters']['field_ebo_category_tid']['table'] = 'field_data_field_ebo_category';
@@ -373,6 +309,63 @@ function doc_priv_views_default_views() {
     53 => 0,
   );
   $handler->display->display_options['filters']['field_ebo_category_tid']['vocabulary'] = 'ebo_categories';
+  /* Filter criterion: Content: Version (taxonomy_vocabulary_10) */
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['id'] = 'taxonomy_vocabulary_10_tid';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['table'] = 'field_data_taxonomy_vocabulary_10';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['field'] = 'taxonomy_vocabulary_10_tid';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['expose']['operator_id'] = 'taxonomy_vocabulary_10_tid_op';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['expose']['label'] = 'Version';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['expose']['operator'] = 'taxonomy_vocabulary_10_tid_op';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['expose']['identifier'] = 'taxonomy_vocabulary_10_tid';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    3 => 0,
+    1 => 0,
+    23 => 0,
+    21 => 0,
+    36 => 0,
+    25 => 0,
+    46 => 0,
+    31 => 0,
+    19 => 0,
+    14 => 0,
+    15 => 0,
+    13 => 0,
+    5 => 0,
+    22 => 0,
+    12 => 0,
+    38 => 0,
+    40 => 0,
+    29 => 0,
+    32 => 0,
+    35 => 0,
+    28 => 0,
+    16 => 0,
+    45 => 0,
+    27 => 0,
+    24 => 0,
+    37 => 0,
+    34 => 0,
+    18 => 0,
+    17 => 0,
+    33 => 0,
+    44 => 0,
+    20 => 0,
+    7 => 0,
+    8 => 0,
+    47 => 0,
+    48 => 0,
+    49 => 0,
+    51 => 0,
+    52 => 0,
+    53 => 0,
+    54 => 0,
+    55 => 0,
+    56 => 0,
+  );
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_10_tid']['vocabulary'] = 'vocabulary_10';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -413,9 +406,9 @@ function doc_priv_views_default_views() {
   $handler->display->display_options['fields']['field_doc_myecw']['table'] = 'field_data_field_doc_myecw';
   $handler->display->display_options['fields']['field_doc_myecw']['field'] = 'field_doc_myecw';
   /* Field: Content: Version */
-  $handler->display->display_options['fields']['field_doc_version']['id'] = 'field_doc_version';
-  $handler->display->display_options['fields']['field_doc_version']['table'] = 'field_data_field_doc_version';
-  $handler->display->display_options['fields']['field_doc_version']['field'] = 'field_doc_version';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_10']['id'] = 'taxonomy_vocabulary_10';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_10']['table'] = 'field_data_taxonomy_vocabulary_10';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_10']['field'] = 'taxonomy_vocabulary_10';
   /* Field: Content: eBO Category */
   $handler->display->display_options['fields']['field_ebo_category']['id'] = 'field_ebo_category';
   $handler->display->display_options['fields']['field_ebo_category']['table'] = 'field_data_field_ebo_category';
@@ -593,14 +586,14 @@ function doc_priv_views_default_views() {
   $handler->display->display_options['fields']['field_doc_myecw']['id'] = 'field_doc_myecw';
   $handler->display->display_options['fields']['field_doc_myecw']['table'] = 'field_data_field_doc_myecw';
   $handler->display->display_options['fields']['field_doc_myecw']['field'] = 'field_doc_myecw';
-  /* Field: Content: Version */
-  $handler->display->display_options['fields']['field_doc_version']['id'] = 'field_doc_version';
-  $handler->display->display_options['fields']['field_doc_version']['table'] = 'field_data_field_doc_version';
-  $handler->display->display_options['fields']['field_doc_version']['field'] = 'field_doc_version';
   /* Field: Content: eBO Category */
   $handler->display->display_options['fields']['field_ebo_category']['id'] = 'field_ebo_category';
   $handler->display->display_options['fields']['field_ebo_category']['table'] = 'field_data_field_ebo_category';
   $handler->display->display_options['fields']['field_ebo_category']['field'] = 'field_ebo_category';
+  /* Field: Content: Version */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_10']['id'] = 'taxonomy_vocabulary_10';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_10']['table'] = 'field_data_taxonomy_vocabulary_10';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_10']['field'] = 'taxonomy_vocabulary_10';
   $handler->display->display_options['path'] = 'documentation-all/private/vbo';
   $export['all_documentation_private'] = $view;
 
