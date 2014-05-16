@@ -60,7 +60,7 @@ function doc_priv_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -130,7 +130,7 @@ function doc_priv_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -167,7 +167,7 @@ function doc_priv_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -209,7 +209,7 @@ function doc_priv_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -247,6 +247,48 @@ function doc_priv_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-priv_documentation-field_internal_only'
+  $field_instances['node-priv_documentation-field_internal_only'] = array(
+    'bundle' => 'priv_documentation',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '<strong>Is this document internal only?</strong>',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_only',
+    'label' => 'Internal Only',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 1,
     ),
   );
 
@@ -289,9 +331,11 @@ function doc_priv_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<strong>Is this document internal only?</strong>');
   t('Description');
   t('File');
   t('Information about the Documentation.  Can use text from beginning of the document');
+  t('Internal Only');
   t('Last Updated');
   t('Myecw folder');
   t('Sub-folders for eBO for use on Documentation and Videos');
